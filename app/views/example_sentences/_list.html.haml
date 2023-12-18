@@ -1,7 +1,10 @@
 - if word.example_sentences.present?
+ :javascript
+    console.log('word', #{word.to_json});
   = render BoxComponent.new(title: t('words.show.example_sentences.title')) do
     = render BoxGridComponent.new(columns: 1) do
       - word.example_sentences.each do |sentence|
+      - p word
         .flex.flex-wrap.justify-between
           = sentence
           = render 'words/tts', word: word, sentence: sentence
