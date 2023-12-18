@@ -48,6 +48,7 @@ gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "validate_url"
 gem "view_component"
+gem "sassc-rails"
 
 group :development do
   gem "better_errors"
