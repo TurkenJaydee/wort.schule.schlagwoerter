@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'selecting_tags/index'
   # These shortlinks have to be the first routes. They are used for URLs
   # without a controller, such as http://host/myword
   resources :nouns, except: %i[index new create], path: "", constraints: SlugConstraint.new(Noun)
