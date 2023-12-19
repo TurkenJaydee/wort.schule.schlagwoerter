@@ -2,6 +2,8 @@ require_relative "boot"
 
 require "rails/all"
 
+require 'openai'
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
@@ -43,9 +45,5 @@ module Wortschule
     # Generated accounts use the following domain for their email address
     config.generated_account_domain = "user.wort.schule"
 
-    
-    config.before_initialize do
-      OpenAI.api_key = ENV['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']
-    end
   end
 end
