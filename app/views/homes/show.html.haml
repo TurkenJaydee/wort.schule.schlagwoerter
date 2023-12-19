@@ -14,7 +14,12 @@
 
     - else
       .mt-12.flex.justify-center
-        = link_to search_path(mode: :advanced), 'data-turbo-frame': '_top', class: 'button w-auto' do
+        = link_to search_path(mode: :advanced), 'data-turbo-frame': '_top', class: 'button w-auto mr-4' do
           .flex.items-center.gap-2
             = heroicon 'magnifying-glass'
             = t('.advanced_search')
+        = link_to 'selecting_tags/index', 'data-turbo-frame': '_top', class: 'button w-auto' do
+          .flex.items-center.gap-2
+            = heroicon 'tag'
+            = 'Tags selektieren'
+        
