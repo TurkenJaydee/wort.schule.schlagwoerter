@@ -36,6 +36,6 @@
 
 coverage
 
-./openaiApiKey.env
+/openaiApiKey.env
 
 .DS_Store
