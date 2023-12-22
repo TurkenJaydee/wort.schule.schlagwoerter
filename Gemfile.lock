@@ -137,6 +137,7 @@ GEM
       devise (>= 4.9.0)
     diff-lcs (1.5.0)
     docile (1.4.0)
+    dotenv (2.8.1)
     draper (4.0.2)
       actionpack (>= 5.0)
       activemodel (>= 5.0)
@@ -240,6 +241,9 @@ GEM
       railties (>= 5.1)
     heroicon (1.0.0)
       rails (>= 5.2)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     humanize_boolean (0.0.2)
       i18n
     i18n (1.14.1)
@@ -298,6 +302,7 @@ GEM
     minitest (5.20.0)
     msgpack (1.6.0)
     multi_json (1.15.0)
+    multi_xml (0.6.0)
     net-imap (0.3.7)
       date
       net-protocol
@@ -533,6 +538,7 @@ DEPENDENCIES
   device_detector
   devise
   devise-i18n
+  dotenv
   draper
   enumerize
   factory_bot
@@ -546,6 +552,7 @@ DEPENDENCIES
   haml
   haml-rails
   heroicon
+  httparty
   humanize_boolean
   image_processing
   importmap-rails

@@ -50,6 +50,7 @@ gem "validate_url"
 gem "view_component"
 gem "sassc-rails"
 gem 'openai'
+gem 'httparty'
 
 group :development do
   gem "better_errors"
